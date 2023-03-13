@@ -4,6 +4,12 @@
 <html>
 <head>
 <title>Sneakerhead Signup<span id="selection-marker-1" class="redactor-selection-marker"></span></title>
+ <script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="Pg5g47ZjDq6cXyU1DghScgvXD49BW7tv";;analytics.SNIPPET_VERSION="4.15.3";
+  analytics.load("Pg5g47ZjDq6cXyU1DghScgvXD49BW7tv");
+  analytics.page();
+  }}();
+</script>
 </head> 
 
 
@@ -41,16 +47,16 @@ Email: <input name="email" required="" size="60" type="email"/>
      email: email,
      name: fullname
    };
-// // Identify call
-//     analytics.identify('12345', {
-//       email: email,
-//       name: fullname,
-//       shoeType: shoeType
-//     });
-//  //  Sign-up Track call
-//     analytics.track('user signed up', user, function() {
-//       window.location.href = "";
-//     });
+// Identify call
+     analytics.identify('12345', {
+      email: email,
+      name: fullname,
+      shoeType: shoeType
+     });
+// Sign-up Track call
+     analytics.track('user signed up', user, function() {
+       window.location.href = "";
+     });
 // // Ecommerce Events
    // analytics.track('Products Searched', {
    //  query: 'kith air force 1'
@@ -98,21 +104,21 @@ Email: <input name="email" required="" size="60" type="email"/>
    // });
 
 
-   // analytics.track('Product Added', {
-   //   cart_id: 'skdjsidjsdkdj29j',
-   //   product_id: '507f1f77bcf86cd799439011',
-   //   sku: 'G-32',
-   //   category: 'Jordan',
-   //   name: 'Air Jordan 4 - White / Military Blue - Fire Red',
-   //   brand: 'Nike',
-   //   variant: 'November 2019',
-   //   price: 500.00,
-   //   quantity: 1,
-   //   coupon: 'First_Purchase',
-   //   position: 2,
-   //   url: 'https://www.example.com/product/path',
-   //   image_url: 'https://www.example.com/product/path.jpg'
-   // });
+// analytics.track('Product Added', {
+// cart_id: 'skdjsidjsdkdj29j',
+ //product_id: '507f1f77bcf86cd799439011',
+ //sku: 'G-32',
+ //category: 'Jordan',
+ //name: 'Air Jordan 4 - White / Military Blue - Fire Red',
+ //brand: 'Nike',
+ //variant: 'November 2019',
+ //price: 500.00,
+ //quantity: 1,
+ //coupon: 'First_Purchase',
+ //position: 2,
+ //url: 'https://www.example.com/product/path',
+ //image_url: 'https://www.example.com/product/path.jpg'
+//});
 
 
    // analytics.track('Order Completed', {
