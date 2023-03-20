@@ -23,6 +23,8 @@ Name: <input name="fullname" required="" size="60" type="text"/>
 <br> <br>
 Email: <input name="email" required="" size="60" type="email"/>
 <br> <br>
+Phone Number: <input name="phone" required="" size="60" type="phone"/>
+<br> <br>
 <label for="shoeType">Preferred Shoe</label>
  <select id="shoeType" name="shoeType">
    <option value="Running">Running</option>
@@ -43,14 +45,17 @@ Email: <input name="email" required="" size="60" type="email"/>
    var email = form["email"].value;
    var fullname = form["fullname"].value;
    var shoeType = form["shoeType"].value;
+   var phone = form["phone"].value; 
    var user = {
      email: email,
-     name: fullname
+     name: fullname,
+     phone: phone
    };
 // Identify call
      analytics.identify('12345', {
       email: email,
       name: fullname,
+      phone: phone, 
       shoeType: shoeType
      });
 // Sign-up Track call
